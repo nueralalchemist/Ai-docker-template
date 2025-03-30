@@ -109,3 +109,36 @@ You can extend this Dockerfile with:
 - Preloading HuggingFace models or datasets
 
 ---
+
+### 🚀 Sample `docker run` with GPU access:
+
+```bash
+docker build -t ubuntu-ai-dev .
+
+docker run -it --rm \
+  --gpus all \
+  -p 8888:8888 -p 7860:7860 -p 8000:8000 \
+  -v $(pwd):/home/aiuser/app \
+  ubuntu-ai-dev
+```
+
+> 🧠 Make sure your host has **NVIDIA Container Toolkit** installed to use `--gpus all`  
+> Install using:
+```bash
+sudo apt install nvidia-container-toolkit
+sudo systemctl restart docker
+```
+
+---
+
+### 🧰 Key Features:
+
+- CUDA 12.2 + cuDNN 8 runtime
+- Python 3.10 + pip
+- GPU-enabled PyTorch, TensorFlow
+- NLP tools: HuggingFace, spaCy, NLTK
+- Visualization: Matplotlib, Seaborn
+- Model serving support: Flask, FastAPI, Gradio
+- JupyterLab environment
+
+---
