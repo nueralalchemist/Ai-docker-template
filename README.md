@@ -110,7 +110,3 @@ You can extend this Dockerfile with:
 - Preloading HuggingFace models or datasets
 
 ---
-
-## ✨ Author
-
-```
