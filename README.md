@@ -30,14 +30,14 @@ This container includes **PyTorch, TensorFlow, Hugging Face Transformers, FastAP
 Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/ubuntu-ai-dev.git
-cd ubuntu-ai-dev
+git clone https://github.com/nueralalchemist/ubuntu-Ai-docker-template.git
+cd Ai-docker-template
 ```
 
 Then build the Docker image:
 
 ```bash
-docker build -t ubuntu-ai-dev .
+docker build -t Ai-docker .
 ```
 
 ---
@@ -63,11 +63,10 @@ docker run -it --rm \
 ## 📂 Folder Structure
 
 ```bash
-ubuntu-ai-dev/
+Ai-docker-template/
 │
 ├── Dockerfile            # Docker build file
 ├── README.md             # Project documentation
-└── (your code)           # You can add your AI scripts and notebooks here
 ```
 
 ---
